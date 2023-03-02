@@ -1,0 +1,584 @@
+body{
+    font-family: 'gothic';
+    font-size: 10px;
+
+}
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body {
+    background-color: #000;
+}
+
+video {
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.header_wrapper {
+    position: relative;
+}
+
+
+
+.banner {
+    position: relative;
+    /*margin-bottom: 122px;*/
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+    position: relative;
+    font-size: 0;
+}
+
+.logo {
+    padding: 38px 0 0 1px;
+}
+
+img {
+    border-radius: 35%;
+}
+
+.logo_text {
+    padding: 44px 0 0 16px;
+    width: 100vw;
+    color: magenta;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 1.08px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: normal;
+    margin: 30px;
+}
+
+/*New DZ table*/
+.flex_block {
+    display: flex;
+}
+.wrap-text{
+    flex-wrap: nowrap;
+}
+.new_table_div {
+    line-height: 2.5;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right bottom, hotpink 20%, yellow 100%);
+    position: fixed;
+    top: 50%;
+    right: -175px;
+    padding: 50px 27px 50px 90px;
+    animation: mymove 3s;
+    animation-iteration-count: 1;
+    transform: translateY(-50%);
+    transition: all 1s ease;
+    border-radius: 25%;
+}
+
+.new_table_text {
+    transform: translateY(-50%) rotate(270deg);
+    position: absolute;
+    top: 50%;
+    left: -60px;
+}
+
+.new_table_div:hover {
+    right: 0;
+    transition: all 2s cubic-bezier(0, 1.41, 0, 1.37);
+}
+
+@keyframes mymove {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 70%;
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+}
+
+.div_social_sprites_new {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(blue, aqua);
+    transform: rotate(45deg);
+    border-radius: 20%;
+}
+
+.flex_block_2 {
+    display: flex;
+}
+
+.flex_block div {
+    font-size: 24px;
+    /*overflow: hidden;*/
+}
+
+.flex_block_2 div {
+    display: flex;
+    overflow: hidden;
+}
+
+.flex_block div a {
+    background: url('../images/social_sprites.png') 0 -120px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.flex_block div a:before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url('../images/social_sprites.png') 0 -120px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 0;
+    left: 0;
+}
+
+.flex_block div + div a {
+    background-position: 0 -540px;
+    transform: rotate(45deg);
+}
+
+.flex_block div + div a:before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url('../images/social_sprites.png') 0 -540px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 0;
+    left: 0;
+}
+
+.flex_block_2 div a {
+    background: url('../images/social_sprites.png') 0 -360px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.flex_block_2 div a:before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url('../images/social_sprites.png') 0 -360px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 0;
+    left: 0;
+}
+.font-size{
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+}
+.gitHttp{
+    font-family: 'gothic';
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(blue, aqua);
+    -webkit-background-clip: text;
+    /*transform: translateY(-50%) rotate(270deg);*/
+    position: absolute;
+    text-decoration: none;
+    top: 80%;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    right: 28%;
+}
+
+.flex_block_2 div + div a {
+    background-position: 0 -660px;
+    transform: rotate(45deg);
+}
+
+.flex_block_2 div + div a:before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url('../images/social_sprites.png') 0 -660px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 0;
+    left: 0;
+}
+
+.flex_block a:hover:before {
+    background-position: 0 -180px;
+}
+
+.flex_block div + div a:hover:before {
+    background-position: 0 -480px;
+}
+
+.flex_block_2 a:hover:before {
+    background-position: 0 -420px;
+}
+
+.flex_block_2 div + div a:hover:before {
+    background-position: 0 -600px;
+}
+/*cube*/
+.wrap {
+    margin-top: 150px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    text-transform: uppercase;
+    position: relative;
+}
+.cube {
+    margin: 0 auto;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    /*right: 30%;*/
+    transform-style: preserve-3d;
+}
+
+.cube > div {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background: linear-gradient(to right, blue, red, blue);
+    border: solid 1px #eeeeee;
+    color: #ffffff;
+}
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: translateZ(-100px) rotateY(180deg);
+}
+
+.right {
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+}
+
+.left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+}
+
+.top {
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
+}
+
+.bottom {
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+}
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube {
+    animation: rotate 10s infinite cubic-bezier(.98,.16,.07,.93);
+}
+
+.wrap:hover .front {
+    transform: translateZ(200px);
+    transition: paused;
+    animation: paused;
+}
+
+.wrap:hover .back {
+    transform: translateZ(-200px) rotateY(180deg);
+    transition: paused;
+    animation: paused;
+
+}
+
+.wrap:hover .right {
+    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+    transition: paused;
+    animation: paused;
+
+}
+
+.wrap:hover .left {
+    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+    transition: paused;
+    animation: paused;
+
+}
+
+.wrap:hover .top {
+    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+    transition: paused;
+    animation: paused;
+
+}
+
+.wrap:hover .bottom {
+    transform: rotateX(270deg) translateZ(100px) translateY(100px);
+    transition: paused;
+    animation: paused;
+
+}
+.cube:hover{
+    transition: paused;
+    animation: paused;
+}
+
+
+
+.cube > div {
+    transition: transform 0.2s ease-in;
+}
+
+
+
+
+
+.banner_text1 {
+    margin: 0 0 0 -3px;
+    width: 296px;
+    padding: 62px 556px 13px 0;
+    color: blueviolet;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 1.08px;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+
+.banner_text2 {
+    width: 350px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 0 0 4px;
+    padding: 0 452px 0 0;
+    position: relative;
+    z-index: 5;
+}
+
+.banner_text3 {
+    width: 100vw;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    line-height: normal;
+    padding: 62px 0 0 0;
+    /*margin: -1px 0 0 7.6px;*/
+}
+
+.finder {
+    margin: 0 0 0 0;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.finder_text {
+    background-image: linear-gradient(to top, cornflowerblue, #af1c1a 100%);
+    border: none;
+    color: magenta;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 0 10px 0;
+    width: 360px;
+    font-size: 23px;
+    margin: 5px 0 0 0;
+}
+
+
+.note-content {
+    font-family: 'gothic';
+    margin: 20px auto 10px auto;
+    width: 450px;
+    border-radius: 25px 0 25px 0;
+    padding: 20px 0 15px 0;
+    text-align: center;
+    font-size: 60px;
+    transform: translateY(-50%) rotate(270deg);
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    background: linear-gradient(to right, blue, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#registration{
+    font-family: 'gothic';
+    color: red;
+}
+.input{
+    width: 230px;
+    color: red;
+    background: linear-gradient(blue, aqua);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    line-height: normal;
+    padding: 9px 0 10px 0;
+    margin-top: 5px;
+
+}
+label {
+    margin: 0 2px 0 0px;
+    cursor: pointer;
+}
+audio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90vw;
+    min-width: 100%;
+    z-index: 1;
+}
+
+::-webkit-input-placeholder {
+    color: yellow;
+    font-family: 'gothic';
+
+}
+
+::-moz-placeholder {
+    color: yellow;
+    font-family: 'gothic';
+
+}
+
+:-moz-placeholder {
+    color: yellow;
+    font-family: 'gothic';
+
+}
+
+:-ms-input-placeholder {
+    color: yellow;
+    font-family: 'gothic';
+
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    font-family: 'gothic';
+
+}
+
+::-moz-placeholder {
+    font-style: italic;
+    font-family: 'gothic';
+
+}
+
+:-moz-placeholder {
+    font-style: italic;
+    font-family: 'gothic';
+
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+    font-family: 'gothic';
+
+}
+img{
+    position: relative;
+    background: transparent;
+    z-index: -5;
+}
+
+ /*CSS*/
+.runner-container {
+    position: relative;
+    width: 100%;
+    height: 59px; /* высота контейнера */
+    overflow: hidden; /* скрыть все, что выходит за границы контейнера */
+}
+
+.runner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    animation: run 5s linear infinite;
+    height: 52px;
+}
+.runner2{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 5;
+    animation: run 5s linear infinite;
+    height: 52px;
+}
+
+@keyframes run {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%); /* переместить скелета на 100% ширины контейнера */
+    }
+}
+
+.runner.pause {
+    animation-play-state: paused; /* остановить анимацию при наведении на скелета */
+}

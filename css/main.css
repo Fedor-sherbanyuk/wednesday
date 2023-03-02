@@ -1,0 +1,13 @@
+@import url('reset.css');
+@import url('style.css');
+
+@font-face {
+    font-family: 'gothic';
+    src: url('../fonts/ag/Arthur_Gothic.eot');
+    src: local('☺'),
+    url('../fonts/ag/Arthur_Gothic.woff') format('woff'),
+    url('../fonts/ag/Arthur_Gothic.ttf') format('truetype'),
+    url('../fonts/ag/Arthur_Gothic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
